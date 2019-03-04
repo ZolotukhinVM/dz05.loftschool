@@ -17,6 +17,6 @@ class MyImage
             ->rotate(45)
             ->insert(self::IMAGE_DIR . '/watermark.png', 'center')
             ->save($this->result);
-        return "<b>$this->original</b> is saved!";
+        return true;
     }
 }
